@@ -1,0 +1,171 @@
+# ===== Node.js =====
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== Tauri =====
+# Tauri build outputs
+src-tauri/target/
+src-tauri/gen/
+
+# Tauri configuration (keep tauri.conf.json but ignore sensitive configs)
+# src-tauri/tauri.conf.json  # 保留配置文件
+src-tauri/Cargo.lock
+
+# ===== Rust =====
+# Rust build artifacts
+**/target/
+**/*.rs.bk
+Cargo.lock
+
+# ===== Android =====
+# Android build outputs
+android/app/build/
+android/build/
+android/.gradle/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+
+# Android Studio
+android/.idea/
+android/*.iml
+android/.externalNativeBuild/
+android/.cxx/
+
+# Capacitor
+android/app/src/main/assets/public/
+
+# ===== Release Files =====
+# 发布版本文件（可选择性忽略）
+# release/
+# *.exe
+# *.apk
+# *.dmg
+# *.deb
+# *.rpm
+
+# ===== Build Tools & Installers =====
+# Rust installer
+rustup-init.exe
+
+# Build artifacts and large files
+*.lib
+*.rlib
+*.pdb
+
+# ===== Development Tools =====
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===== Temporary Files =====
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Package files
+*.tgz
+*.tar.gz
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# ===== Miscellaneous =====
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">接驳车时刻查询</string>
+    <string name="title_activity_main">接驳车时刻查询</string>
+    <string name="package_name">com.shuttlebus.schedule</string>
+    <string name="custom_url_scheme">com.shuttlebus.schedule</string>
+</resources>

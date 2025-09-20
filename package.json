@@ -1,0 +1,86 @@
+{
+  "name": "shuttle-bus-schedule",
+  "private": true,
+  "version": "2.0.0",
+  "description": "一个现代化的跨平台接驳车时刻查询应用，支持Web、桌面和移动端",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "homepage": "./",
+  "author": {
+    "name": "XZH",
+    "email": "your-email@example.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shuttle-bus",
+    "schedule",
+    "tauri",
+    "react",
+    "typescript",
+    "cross-platform",
+    "desktop-app",
+    "mobile-app",
+    "web-app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/shuttle-bus-schedule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/shuttle-bus-schedule/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "build-electron": "npm run build && electron-builder",
+    "dist": "npm run build && electron-builder --publish=never",
+    "pack": "npm run build && electron-packager . 接驳车时刻查询 --platform=win32 --arch=x64 --out=release --overwrite",
+    "tauri": "tauri",
+    "tauri-dev": "tauri dev",
+    "build-tauri": "tauri build",
+    "android-dev": "cap run android",
+    "build-android": "npm run build && cap copy android && cap open android",
+    "sync-android": "cap sync android",
+    "clean": "rimraf dist release src-tauri/target android/app/build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@tauri-apps/api": "^2.8.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.4",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^8.2.2",
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.example.shuttle-bus-query",
+    "productName": "接驳车时刻查询",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  }
+}
