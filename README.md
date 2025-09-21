@@ -13,7 +13,7 @@
 
 ## 📦 下载使用
 
-[![最新版本](https://img.shields.io/github/v/release/您的用户名/仓库名?style=for-the-badge&logo=github)](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest)
+[![最新版本](https://img.shields.io/github/v/release/xzh-xzh/shuttle-bus-schedule?style=for-the-badge&logo=github)](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest)
 
 | 平台 | 文件 | 大小 | 下载 |
 |------|------|------|------|
