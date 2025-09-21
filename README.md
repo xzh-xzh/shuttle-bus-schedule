@@ -1,6 +1,8 @@
+*本应用使用 Gemini Code Assistant 和 Trae 开发*
+
 # 🚌 接驳车实时查询系统
 
-一个现代化的跨平台接驳车时刻查询应用，支持Web、桌面和移动端。
+东南大学兰台公寓接驳车实时查询应用，支持桌面和移动端。
 
 ## ✨ 特性
 
@@ -83,17 +85,4 @@ npm run build-android
 - [打包说明](./打包说明.md) - 构建和打包指南
 - [部署指南](./部署指南.md) - 生产环境部署
 - [版本说明](./release/版本说明.md) - 发布版本信息
-- [GitHub上传指南](./GitHub上传指南.md) - 项目上传流程
-- [GitHub Release指南](./GitHub-Release发布指南.md) - 版本发布流程
 
-## 📄 许可证
-
-MIT License
-
-## 🤝 贡献
-
-欢迎提交Issue和Pull Request！
-
----
-
-🎉 **项目亮点**: 从82MB的Electron应用优化到8.15MB的Tauri应用，体积减少90%！
