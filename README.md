@@ -13,12 +13,12 @@
 
 ## 📦 下载使用
 
-[![最新版本](https://img.shields.io/github/v/release/您的用户名/仓库名?style=for-the-badge&logo=github)](https://github.com/您的用户名/仓库名/releases/latest)
+[![最新版本](https://img.shields.io/github/v/release/您的用户名/仓库名?style=for-the-badge&logo=github)](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest)
 
 | 平台 | 文件 | 大小 | 下载 |
 |------|------|------|------|
-| 🖥️ Windows | 接驳车实时查询.exe | 8.15 MB | [GitHub Release](https://github.com/您的用户名/仓库名/releases/latest) / [本地文件](./release/接驳车实时查询.exe) |
-| 📱 Android | 接驳车查询.apk | 7.02 MB | [GitHub Release](https://github.com/您的用户名/仓库名/releases/latest) / [本地文件](./release/接驳车查询.apk) |
+| 🖥️ Windows | 接驳车实时查询.exe | 8.15 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest) / [本地文件](./release/接驳车实时查询.exe) |
+| 📱 Android | 接驳车查询.apk | 7.02 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest) / [本地文件](./release/接驳车查询.apk) |
 
 **使用说明**：
 - Windows：下载exe文件，双击运行，无需安装
