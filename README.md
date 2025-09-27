@@ -20,7 +20,8 @@
 | 平台 | 文件 | 大小 | 下载 |
 |------|------|------|------|
 | 🖥️ Windows | 接驳车实时查询.exe | 8.15 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/download/v1.0/shuttle-bus-schedule.exe)  |
-| 📱 Android | 接驳车查询.apk | 7.02 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/download/v1.0/shuttle-bus-schedule.apk)  |
+| 📱 Android | 接驳车查询.apk | 3.98 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/download/v1.0/shuttle-bus-schedule.apk)  |
+| 🌐 web | 接驳车查询 | -- | [web页面](https://copy-of-688402601431.us-west1.run.app)  |
 
 **使用说明**：
 - Windows：下载exe文件，双击运行，无需安装
