@@ -2,7 +2,7 @@
 
 # 🚌 接驳车实时查询系统
 
-东南大学兰台公寓接驳车实时查询应用，支持桌面和移动端。
+东南大学兰台公寓接驳车实时查询应用，支持 Web、Windows 桌面端和 Android 移动端。
 
 ## ✨ 特性
 
@@ -19,13 +19,14 @@
 
 | 平台 | 文件 | 大小 | 下载 |
 |------|------|------|------|
-| 🖥️ Windows | 接驳车实时查询.exe | 8.15 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/download/v1.0/shuttle-bus-schedule.exe)  |
-| 📱 Android | 接驳车查询.apk | 3.98 MB | [GitHub Release](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/download/v1.0/shuttle-bus-schedule.apk)  |
-| 🌐 web | 接驳车查询 | -- | [web页面](https://copy-of-688402601431.us-west1.run.app)  |
+| 🖥️ Windows | 接驳车实时查询.exe | 8.15 MB | [最新版本](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest) |
+| 📱 Android | 接驳车查询.apk | 约 4 MB | [最新版本](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest) |
+| 🌐 Web | 接驳车查询 | -- | [在线访问](http://47.76.77.248/) |
 
 **使用说明**：
 - Windows：下载exe文件，双击运行，无需安装
 - Android：下载apk文件，启用"未知来源"后安装，支持Android 7.0+
+- Web：当前通过阿里云 ECS 公网 IP 提供 HTTP 访问；绑定域名后将启用 HTTPS
 
 ## 🚀 开发
 
