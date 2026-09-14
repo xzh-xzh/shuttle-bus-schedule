@@ -40,9 +40,36 @@ export interface HolidayAdjustment {
 }
 
 export interface HolidayConfig {
-  year: number;
+  presetId: string;
+  presetRevision: number;
+  label: string;
+  source: string;
+  validFrom: string;
+  validTo: string;
   adjustments: HolidayAdjustment[];
+  notes: string[];
   lastUpdated: string; // ISO 日期字符串
+}
+
+export interface HolidayRule {
+  startDate: string;
+  endDate?: string;
+  type: 'holiday' | 'workday';
+  name: string;
+  description?: string;
+}
+
+export interface HolidayPreset {
+  schemaVersion: number;
+  presetId: string;
+  revision: number;
+  label: string;
+  source: string;
+  updatedAt: string;
+  validFrom: string;
+  validTo: string;
+  rules: HolidayRule[];
+  notes?: string[];
 }
 
 // 全局类型声明

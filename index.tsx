@@ -1,6 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 
 // 平台检测函数
 const detectPlatform = (): 'mobile' | 'desktop' => {

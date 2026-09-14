@@ -7,8 +7,8 @@ android {
         applicationId "com.shuttlebus.schedule"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -47,6 +47,16 @@ dependencies {
 }
 
 apply from: 'capacitor.build.gradle'
+
+// Capacitor's generated file currently requests Java 21, while this project and
+// the installed Android toolchain use Java 17. Keep the app target reproducible
+// after every `cap sync`, which regenerates capacitor.build.gradle.
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
 
 try {
     def servicesJSON = file('google-services.json')

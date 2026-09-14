@@ -4,7 +4,9 @@ import { SCHEDULE_DATA } from './constants';
 import type { ScheduleType, Route, UpcomingDeparture, DepartureInfo, LoopingInfo } from './types';
 import { BusIcon, ClockIcon, CalendarIcon, SunIcon, MoonIcon, RouteIcon, ResetIcon, SettingsIcon } from './components/Icons';
 import { HolidayManagerComponent } from './components/HolidayManager';
+import { AppCredit } from './components/AppCredit';
 import { holidayManager } from './utils/holidayManager';
+import { formatLocalDate, parseLocalDate } from './utils/dateUtils';
 
 // Helper function to find active looping services
 const findActiveLoopingServices = (loopingServices: LoopingInfo[] | undefined, queryTime: Date): UpcomingDeparture[] => {
@@ -294,7 +296,8 @@ const App: React.FC = () => {
   };
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedDate = new Date(e.target.value);
+    const selectedDate = parseLocalDate(e.target.value);
+    if (!selectedDate) return;
     // 保持当前的时间，只更改日期
     const newQueryDate = new Date(selectedDate);
     newQueryDate.setHours(queryTime.getHours(), queryTime.getMinutes(), 0, 0);
@@ -430,7 +433,7 @@ const App: React.FC = () => {
                 <input
                     type="date"
                     id="queryDate"
-                    value={queryDate.toISOString().split('T')[0]}
+                    value={formatLocalDate(queryDate)}
                     onChange={handleDateChange}
                     className="bg-slate-700 border border-slate-600 rounded-md px-2 py-1 text-white font-mono text-lg focus:ring-2 focus:ring-cyan-500 focus:outline-none"
                     aria-label="查询日期"
@@ -481,6 +484,7 @@ const App: React.FC = () => {
                 {showFullSchedule ? '隐藏' : '显示'}完整时刻表
             </button>
             {showFullSchedule && <FullScheduleView routes={SCHEDULE_DATA[scheduleType]} />}
+            <AppCredit />
         </footer>
 
       </div>

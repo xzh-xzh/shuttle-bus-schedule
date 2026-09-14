@@ -25,5 +25,18 @@
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
-  }
+  },
+  "include": [
+    "*.ts",
+    "*.tsx",
+    "components/**/*.tsx",
+    "utils/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "release",
+    "android",
+    "src-tauri/target"
+  ]
 }

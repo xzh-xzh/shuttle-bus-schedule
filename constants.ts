@@ -10,11 +10,11 @@ export const SCHEDULE_DATA: Schedule = {
       ],
       departures: [
         // Morning
-        { time: '07:30', routeDetail: '兰台 → 北门 → 转盘' },
-        { time: '07:30', routeDetail: '兰台 → 北门 → 转盘' },
-        { time: '07:40', routeDetail: '兰台 → 北门 → 转盘' },
-        { time: '09:40', routeDetail: '兰台 → 北门 → 转盘' },
-        { time: '09:40', routeDetail: '兰台 → 北门 → 转盘' },
+        { time: '07:30', routeDetail: '兰台 → 北门转盘 → 纪忠楼' },
+        { time: '07:30', routeDetail: '兰台 → 北门转盘 → 纪忠楼' },
+        { time: '07:40', routeDetail: '兰台 → 北门转盘 → 纪忠楼' },
+        { time: '09:30', routeDetail: '兰台 → 北门转盘 → 纪忠楼' },
+        { time: '09:30', routeDetail: '兰台 → 北门转盘 → 纪忠楼' },
         // Mid-day & Evening
         { time: '10:00', routeDetail: '兰台 → 北门转盘' },
         { time: '10:20', routeDetail: '兰台 → 北门转盘 → 文学院 → 纪忠楼' },

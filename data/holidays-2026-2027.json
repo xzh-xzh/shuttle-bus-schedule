@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "presetId": "seu-2026-2027",
+  "revision": 1,
+  "label": "东南大学 2026—2027 学年",
+  "source": "东南大学2026—2027学年校历（用户提供图片）",
+  "updatedAt": "2026-09-14T00:00:00+08:00",
+  "validFrom": "2026-08-24",
+  "validTo": "2027-08-15",
+  "rules": [
+    {
+      "startDate": "2026-09-20",
+      "type": "workday",
+      "name": "秋季学期上课（国庆调休）",
+      "description": "周日上课，补10月6日课程"
+    },
+    {
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "type": "holiday",
+      "name": "中秋节",
+      "description": "放假，不调休"
+    },
+    {
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-07",
+      "type": "holiday",
+      "name": "国庆节",
+      "description": "放假"
+    },
+    {
+      "startDate": "2026-10-10",
+      "type": "workday",
+      "name": "国庆调休",
+      "description": "周六上课，补10月7日课程"
+    },
+    {
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-07",
+      "type": "holiday",
+      "name": "校运会停课",
+      "description": "停课不补，按节假日时刻表"
+    },
+    {
+      "startDate": "2027-01-25",
+      "endDate": "2027-02-21",
+      "type": "holiday",
+      "name": "寒假",
+      "description": "学生寒假"
+    },
+    {
+      "startDate": "2027-06-28",
+      "endDate": "2027-08-15",
+      "type": "holiday",
+      "name": "暑假",
+      "description": "学生暑假"
+    }
+  ],
+  "notes": [
+    "2027年法定节假日安排，校历注明待国务院办公厅公布后另行通知；本预置不推测这些日期。"
+  ]
+}

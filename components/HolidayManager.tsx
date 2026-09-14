@@ -68,7 +68,7 @@ export const HolidayManagerComponent: React.FC<HolidayManagerProps> = ({
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `holiday-config-${config.year}.json`;
+      a.download = `holiday-config-${config.presetId}.json`;
       a.click();
       URL.revokeObjectURL(url);
       showMessage('success', '配置已下载');
@@ -129,8 +129,9 @@ export const HolidayManagerComponent: React.FC<HolidayManagerProps> = ({
             </button>
           </div>
           <p className="text-slate-400 mt-2">
-            管理 {config.year} 年的节假日和调休安排
+            管理 {config.label} 的节假日和调休安排
           </p>
+          <p className="text-slate-500 mt-1 text-sm">来源：{config.source}</p>
         </div>
 
         {/* 消息提示 */}
@@ -305,6 +306,13 @@ export const HolidayManagerComponent: React.FC<HolidayManagerProps> = ({
                     取消
                   </button>
                 </div>
+              </div>
+            )}
+            {config.notes.length > 0 && (
+              <div className="mt-4 rounded-md border border-amber-700/60 bg-amber-950/30 p-3">
+                {config.notes.map((note, index) => (
+                  <p key={index} className="text-sm text-amber-300">{note}</p>
+                ))}
               </div>
             )}
           </div>
