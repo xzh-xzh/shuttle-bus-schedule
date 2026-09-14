@@ -1,7 +1,7 @@
 {
   "name": "shuttle-bus-schedule",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "一个现代化的跨平台接驳车时刻查询应用，支持Web、桌面和移动端",
   "type": "module",
   "main": "electron/main.cjs",
