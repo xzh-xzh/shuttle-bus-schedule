@@ -1,4 +1,4 @@
-*本应用使用 Gemini Code Assistant 和 Trae 开发*
+*本应用使用 Gemini Code Assistant 、Trae 和 codex 开发*
 
 # 🚌 接驳车实时查询系统
 
