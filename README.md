@@ -21,12 +21,16 @@
 |------|------|------|------|
 | 🖥️ Windows | 接驳车实时查询.exe | 8.15 MB | [最新版本](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest) |
 | 📱 Android | 接驳车查询.apk | 约 4 MB | [最新版本](https://github.com/xzh-xzh/shuttle-bus-schedule/releases/latest) |
-| 🌐 Web | 接驳车查询 | -- | [在线访问](http://47.76.77.248/) |
+| 🌐 Web | 接驳车查询 | -- | [在线访问](https://xzh-xzh.github.io/shuttle-bus-schedule/) |
 
 **使用说明**：
 - Windows：下载exe文件，双击运行，无需安装
 - Android：下载apk文件，启用"未知来源"后安装，支持Android 7.0+
-- Web：当前通过阿里云 ECS 公网 IP 提供 HTTP 访问；绑定域名后将启用 HTTPS
+- Web：通过 GitHub Pages 免费托管，支持 HTTPS，无需安装。
+
+网页由 `.github/workflows/deploy-pages.yml` 自动发布。更新时刻表或节假日规则并推送到 `main` 后，GitHub Actions 会检查数据、构建并更新网站，也可在 Actions 页面手动运行。无需阿里云服务器或额外部署密钥。
+
+节假日自定义设置保存在当前浏览器中；原阿里云网址下的自定义设置不会自动迁移到新网址。
 
 ## 🚀 开发
 
